@@ -1,85 +1,188 @@
 # MOD_7_PORTAFOLIO
+# 🌐 Portafolio Profesional – CAGV
 
+Este portafolio reúne los proyectos desarrollados durante mi formación como desarrolladora en tecnologías de la información, demostrando mi capacidad para diseñar, documentar e implementar productos digitales funcionales.  
 
+El objetivo de este portafolio es presentar evidencia real de mis habilidades técnicas, organizadas de manera profesional y accesible para futuras oportunidades laborales.  
 
-INDICACION DE TAREA DE LA PLATAFORMA
-Evaluación de portafolio
-Instrucciones
+---
 
-A lo largo de este proyecto, se te guiará en la creación de un portafolio profesional que demuestre tu capacidad para desarrollar productos digitales efectivos. El objetivo es que al finalizar este portafolio puedas mostrar tu dominio en el uso de herramientas y buenas prácticas en la industria del desarrollo tecnológico. Además, aprenderás cómo elaborar y presentar un producto tecnológico que resuelva una problemática real, utilizando las competencias adquiridas durante el curso.
+# 🎯 Objetivo del Portafolio
 
-Este proyecto será un registro de evidencia clave para tu portafolio, el cual potenciará tu perfil laboral y te permitirá demostrar las habilidades adquiridas durante tu formación.
+- Mostrar mis competencias en desarrollo web, programación, bases de datos y diseño de productos tecnológicos.  
+- Presentar proyectos reales con documentación clara, enfocada en la solución de problemas.  
+- Demostrar buenas prácticas en diseño, estructura y versionamiento con Git y GitHub.  
+- Publicar un portafolio en línea accesible, moderno y responsivo.
 
-Requerimientos Funcionales Mínimos Esperados
+---
 
-1. Portafolio Profesional y Efectivo:
+# 🚀 Proyecto Destacado (Producto Tecnológico)
+## 📌 **Sistema de Gestión para Tienda de Tecnología – Base de Datos Relacional**
 
-Explicación:
+Este proyecto fue desarrollado como solución a una problemática real: una tienda de tecnología necesitaba gestionar eficientemente su inventario, clientes y pedidos mediante un sistema estructurado y seguro.
 
-Características fundamentales de un portafolio de productos digitales efectivo:
+### 🟣 **1. Problema identificado**
+La tienda no contaba con un sistema que permitiera:
+- Manejar productos disponibles  
+- Registrar clientes  
+- Controlar pedidos y su contenido  
+- Relacionar productos dentro de un pedido  
+- Consultar información de forma rápida y precisa  
 
-Claridad y enfoque: Un portafolio debe comunicar de forma clara tu propuesta de valor y la solución que ofreces a los problemas del cliente o usuario.
+Esto generaba errores humanos, pérdida de información y dificultad para hacer seguimiento de ventas.
 
-Organización: Organiza tu contenido de manera estructurada, con una navegación fácil de usar.
+---
 
-Pruebas de habilidades: Cada proyecto o producto digital debe incluir evidencias tangibles de tus competencias (por ejemplo, capturas de pantalla, enlaces a demostraciones, código fuente en GitHub, etc.).
+### 🟢 **2. Objetivo del proyecto**
+Diseñar y construir una **base de datos relacional** que permita almacenar, consultar y administrar toda la información clave del negocio, garantizando:
 
-Estética y diseño: El diseño debe ser profesional, moderno, y alineado con las mejores prácticas de la industria.
+- Integridad de los datos  
+- Relaciones claras entre clientes, pedidos y productos  
+- Consultas eficientes  
+- Escalabilidad  
+- Organización y control del inventario  
 
-Responsividad: El portafolio debe funcionar bien en dispositivos móviles y de escritorio, asegurando que los usuarios puedan navegar sin problemas.
+---
 
-2. Elaboración de un Producto Tecnológico para Resolver una Problemática Real:
+# 🧩 3. Proceso de Desarrollo
 
-Objetivo:
+El proyecto se realizó aplicando buenas prácticas del diseño y administración de bases de datos:
 
-Desarrollar un producto tecnológico que resuelva una problemática real que hayas identificado. Puede ser una aplicación web, móvil o una herramienta digital.
+### ✔️ **Etapa 1: Análisis del dominio**
+Identificación de entidades principales:
+- Clientes  
+- Productos  
+- Pedidos  
+- Detalle de pedidos  
 
-Requisitos:
+Definición de relaciones:
+- Un cliente puede tener varios pedidos  
+- Un pedido puede incluir varios productos  
+- Una tabla intermedia modela el detalle de cada pedido  
 
-Identificación de la problemática: Debes seleccionar un problema real que te gustaría resolver. Ejemplos incluyen mejorar la organización de tareas personales, crear una aplicación educativa, o resolver un reto de accesibilidad en plataformas digitales.
+---
 
-Proceso de desarrollo: Expón claramente el proceso seguido para el diseño, desarrollo e implementación del producto. Deberás aplicar las buenas prácticas del ciclo de vida del desarrollo de software, desde la planificación hasta la implementación.
+### ✔️ **Etapa 2: Diseño del Modelo**
+Se desarrolló un **Diagrama Entidad-Relación (ERD)** para definir:
 
-Uso de tecnologías apropiadas: Debes elegir un conjunto de tecnologías que sean adecuadas para la solución de la problemática y que reflejen las tendencias actuales en la industria. Esto podría incluir frameworks como React, Node.js, Angular, o cualquier otra tecnología que utilices en tu Stack JavaScript.
+- Tablas  
+- Campos  
+- Tipos de datos  
+- Claves primarias  
+- Claves foráneas  
+- Cardinalidades  
 
-3. Implementación del Portafolio de un Producto Digital:
+Archivo: `ERD.png`
 
-Objetivo:
+---
 
-Desarrollar e implementar un portafolio en línea que albergue tu producto digital y que sea accesible para futuras oportunidades laborales.
+### ✔️ **Etapa 3: Implementación (DDL)**
+En el archivo `PARTE 1-P.sql` se definieron:
 
-Requisitos:
+- Creación de tablas  
+- Definición de PK y FK  
+- Relaciones uno-a-muchos y muchos-a-muchos  
+- Restricciones de integridad  
 
-Diseño del portafolio: Crea un sitio web responsivo que albergue los productos digitales que has desarrollado. Puedes utilizar herramientas y frameworks como Bootstrap, React o incluso un generador de portafolios como Gatsby o Next.js.
+---
 
-Contenido del portafolio: Debes incluir información relevante de cada producto desarrollado. Esto debe abarcar:
+### ✔️ **Etapa 4: Inserción de Datos (DML)**
+Archivo `PARTE 2-P.sql`:
+- Inserción de clientes  
+- Registro de productos  
+- Creación de pedidos  
+- Población del detalle del pedido  
 
-Descripción del producto.
+---
 
-Objetivos resueltos.
+### ✔️ **Etapa 5: Consultas (SELECT)**
+Archivo `PARTE 3-P.sql` incluye consultas como:
 
-Tecnologías utilizadas.
+- Productos más vendidos  
+- Pedidos por cliente  
+- Total por pedido  
+- Inventario disponible  
+- Pedidos con JOIN múltiples  
 
-Capturas de pantalla o demostraciones en vivo.
+---
 
-Enlace al código fuente (por ejemplo, en GitHub).
+### ✔️ **Etapa 6: Actualización y Transacciones**
+Archivo `PARTE 4-P.sql` incluye:
 
-Presentación profesional: Tu portafolio debe incluir una sección sobre ti, tu experiencia, habilidades y tu objetivo profesional, de manera que resalte tu perfil como desarrollador.
+- UPDATE  
+- DELETE  
+- Control de transacciones (COMMIT, ROLLBACK)  
 
-Gestión del código: Utiliza Git y GitHub para versionar y gestionar el código de los productos en tu portafolio. Asegúrate de que tu código esté bien documentado y sea fácil de entender para posibles empleadores o colaboradores.
+---
 
-Pruebas de acceso: Si es posible, asegúrate de incluir accesos al producto mediante un enlace o incluso una sección donde los empleadores puedan probar la aplicación de manera interactiva.
+# 🔧 Tecnologías Utilizadas
 
-Entrega Final
+### 🗄️ **Base de Datos**
+- SQL  
+- MySQL  
 
-Portafolio Digital Funcional: Debe estar disponible en línea, con un diseño atractivo y fácil de navegar. Debe incluir al menos dos proyectos que resuelvan problemas reales.
+### 🧱 **Lenguajes**
+- DDL (Definición)  
+- DML (Manipulación)  
+- DQL (Consultas)  
 
-Documentación del Proyecto: Cada producto dentro del portafolio debe contar con documentación detallada que explique:
+### 🛠️ **Herramientas**
+- MySQL Workbench  
+- Git  
+- GitHub  
+- ERD Modeling Tools  
 
-El problema resuelto.
+---
 
-Las tecnologías utilizadas.
+# 📂 Archivos del Proyecto (Repositorio del producto tecnológico)
 
-El enfoque de desarrollo seguido.
+- `README.md` – Documentación general  
+- `PARTE 1-P.sql` – Creación del modelo  
+- `PARTE 2-P.sql` – Inserción de datos  
+- `PARTE 3-P.sql` – Consultas  
+- `PARTE 4-P.sql` – Actualización y DML  
+- `ERD.png` – Diagrama Entidad-Relación  
 
-Código Fuente en GitHub: Deberás asegurarte de que el código de cada producto esté disponible públicamente en GitHub o una plataforma similar. Esto permitirá que se revisen las buenas prácticas de codificación.
+🔗 **Repositorio del proyecto:**  
+https://github.com/Cami226/PORTAFOLIO-MOD-3--BASE-DE-DATOS-CAGV
+
+---
+
+# 🌐 Otros Proyectos del Portafolio
+
+## 📍 Proyecto Web con HTML y Bootstrap  
+Sitio responsivo con estructura semántica, diseño limpio y componentes reutilizables.  
+🔗 Repositorio: https://github.com/Cami226/modulo-2.git
+
+---
+
+## 📍 Agenda en Java (POO y colecciones)  
+Aplicación de consola para gestionar contactos.  
+🔗 Repositorio: https://github.com/Cami226/PORTAFOLIO-MOD-4-AGENDA.git
+
+---
+
+## 📍 Aplicación Jakarta EE (MVC – JSP – Servlets)  
+Proyecto empresarial con conexión a base de datos.  
+🔗 Repositorio: https://github.com/Cami226/PORTAFOLIO_MOD_5.git
+
+---
+
+## 📍 Spring Boot CRUD – Gestión de Capacitaciones  
+Aplicación empresarial con capas MVC, repositorios y validaciones.  
+🔗 Repositorio: https://github.com/Cami226/PORTAFOLIO_MOD_6.git
+
+---
+
+# 💻 Portafolio Web
+Puedes ver la versión pública en línea aquí:  
+👉 **https://cami226.github.io/Portafolio-CAGV/**
+
+---
+
+# 👩‍💻 Autora
+**Camila G. V.**  
+Desarrolladora Web – Java – Bases de Datos  
+GitHub: https://github.com/Cami226  
+Portafolio Web: https://cami226.github.io/Portafolio-CAGV/  
+
