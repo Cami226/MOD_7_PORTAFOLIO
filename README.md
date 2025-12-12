@@ -1,6 +1,8 @@
 # MOD_7_PORTAFOLIO
 
 
+
+INDICACION DE TAREA DE LA PLATAFORMA
 Evaluación de portafolio
 Instrucciones
 
